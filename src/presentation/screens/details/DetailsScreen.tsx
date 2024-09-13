@@ -13,7 +13,7 @@ export const DetailsScreen = ({ route }: DetailsProps) => {
   if(isLoading) return <Text>Cargando..</Text>
   return (
     <View>
-      <MovieHeader movie={movie!}/>
+      <MovieHeader title={movie?.originalTitle!} originalTitle={movie?.originalTitle!} poster={movie?.poster!}/>
     </View>
   );
 };
